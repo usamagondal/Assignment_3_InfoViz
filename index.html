@@ -80,6 +80,8 @@
 </head>
 
 <body>
+    <div class="container" style="margin-top: 40px;">
+        <h3>Indivisual Assignment Submitted By:Usama 1535769</h3></div>
     <div class="container">
         <h1>Campaign vs Deposit (by Demographics)</h1>
 
@@ -452,6 +454,42 @@
         d3.select('#educationSelect').on('change', () => drawChart(data));
         d3.select('#maritalSelect').on('change', () => drawChart(data));
     </script>
+    <div class="container" style="margin-top: 40px;">
+        <h2>Explanation of the Assignment</h2>
+
+        <h3>1. What are the data variables?</h3>
+        <p>
+            The dataset includes campaign contacts, deposit outcome, job type, marital status,
+            education level, age, call duration, and previous contacts.
+        </p>
+
+        <h3>2. What type of visualization is it?</h3>
+        <p>
+            It is a jittered scatter plot (bubble chart) exploring the relationship between number
+            of campaign contacts and whether a client made a deposit.
+        </p>
+
+        <h3>3. What visual encoding does it use?</h3>
+        <p>
+            X-position encodes campaign count, Y-position encodes deposit result, size encodes call
+            duration, and color indicates deposit yes/no.
+        </p>
+
+        <h3>4. What are the visual elements?</h3>
+        <p>
+            Marks: circles; Scales: linear, point, sqrt, ordinal; Channels: position, size, color;
+            Other: jitter, tooltips, axes, legend.
+        </p>
+
+        <h3>Description Paragraph</h3>
+        <p>
+            This visualization presents a jittered scatter plot showing how campaign contact frequency
+            relates to deposit outcomes. Each circle represents a client, positioned by contacts and
+            deposit outcome, sized by call duration, and colored by deposit status. Users can filter
+            results by job, education, and marital status. Trend lines and tooltips enhance analysis,
+            making patterns easier to interpret.
+        </p>
+    </div>
 </body>
 
 </html>
